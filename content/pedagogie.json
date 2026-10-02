@@ -1,0 +1,194 @@
+{
+  "title": "الإطار البيداغوجي والتحوّل السلوكي",
+  "title_fr": "Cadre pédagogique & transformation comportementale",
+  "intro": "انطلق هذا المشروع من منطلق تربوي وعلمي دقيق: **السلوك العنيف والتوتّر لدى المراهق هو في جوهره تعبير عن شحنات انفعالية لم تجد لغة لفظية سويّة للإفصاح عنها.**",
+  "intro_fr": "Ce projet part d'un constat éducatif et scientifique : **le comportement violent de l'adolescent est, au fond, l'expression d'une charge émotionnelle qui n'a pas trouvé de langage pour se dire.**",
+  "sections": [
+    {
+      "title": "مسار المقاربة: من نواة النادي إلى التعميم داخل القسم",
+      "title_fr": "De la cellule du club à la généralisation en classe",
+      "text": "بدأنا بإنشاء نواة حاضنة داخل النادي ضمّت 40 تلميذاً، وسرعان ما أثبتت التجربة نجاحها الملموس لتمتدّ وتتحوّل إلى شراكة تشاركية واسعة جمعت المدرسة الإعدادية النموذجية بخزندار وإعدادية كاراتشي.\n\nتحوّل التلاميذ الذين اختبروا هذا التعديل السلوكي إلى **سفراء وقدوة لزملائهم**. وبدمج التأليف الموسيقي والرسم التشكيلي والتعبير المسرحي والكوريغرافي، وجد كلّ تلميذ وسيلة راقية ومشروعة للتعبير عن ذاته داخل القسم وخارجه.",
+      "text_fr": "Nous avons commencé par une cellule de 40 élèves au sein du club ; l'expérience a rapidement fait ses preuves et s'est transformée en un large partenariat entre le Collège pilote Khaznadar et le Collège Karatchi.\n\nLes élèves ayant vécu cette transformation sont devenus **des ambassadeurs et des modèles pour leurs camarades**.",
+      "image": "media/web/orchestre-cour.jpg",
+      "image_caption": "الفرقة الموسيقية المشتركة بقيادة التلميذ جاد في ساحة العلم"
+    },
+    {
+      "title": "تقديم المشروع",
+      "title_fr": "Présentation du projet",
+      "text": "مشروع تعليمي شامل يهدف إلى تطوير قدرات التلاميذ وتنمية مواهبهم من خلال دمج الفنون في العملية التعليمية.\n\nيرتكز المشروع على مبادئ التعلّم التجريبي والتعاوني لخلق بيئة محفّزة وتعاونية للابتكار والتعبير عن الذات.\n\nيهدف المشروع إلى غرس القيم الإيجابية وبناء جيل متكامل من خلال الفنّ: **نبذ العنف • التربية بالفنّ • التكامل**.",
+      "text_fr": "Un projet éducatif global qui vise à développer les capacités et les talents des élèves en intégrant les arts au processus d'apprentissage, sur la base d'un apprentissage expérientiel et coopératif : **rejet de la violence • éducation par l'art • complémentarité**.",
+      "image": "media/web/show-projet.jpg",
+      "image_caption": "تقديم المشروع: نبذ العنف، التربية بالفنّ، التكامل"
+    }
+  ],
+  "transformation_title": "مسار التحوّل: من العنف إلى القيادة",
+  "transformation_title_fr": "Le parcours de transformation : de la violence au leadership",
+  "transformation": [
+    {
+      "stage": "العنف",
+      "stage_fr": "Violence",
+      "text": "المواجهة وفهم جذور الصراع",
+      "text_fr": "Confronter et comprendre les racines du conflit"
+    },
+    {
+      "stage": "الوعي",
+      "stage_fr": "Conscience",
+      "text": "التعلّم واكتساب المعرفة والبصيرة",
+      "text_fr": "Apprendre, acquérir savoir et discernement"
+    },
+    {
+      "stage": "الانتماء",
+      "stage_fr": "Appartenance",
+      "text": "الاتصال بالمجتمع وتعزيز الهوية الثقافية التونسية",
+      "text_fr": "Se relier à la communauté et à l'identité culturelle tunisienne"
+    },
+    {
+      "stage": "الإبداع",
+      "stage_fr": "Création",
+      "text": "التعبير عن الذات والابتكار من خلال الفنّ",
+      "text_fr": "S'exprimer et innover par l'art"
+    },
+    {
+      "stage": "القيم",
+      "stage_fr": "Valeurs",
+      "text": "ترسيخ المبادئ الأخلاقية والمسؤولية الاجتماعية",
+      "text_fr": "Ancrer les principes éthiques et la responsabilité sociale"
+    },
+    {
+      "stage": "القيادة",
+      "stage_fr": "Leadership",
+      "text": "التأثير الإيجابي وتوجيه المجتمع برؤية",
+      "text_fr": "Influencer positivement et guider avec vision"
+    }
+  ],
+  "theory": [
+    {
+      "title": "المنطلق السيكولوجي لتعديل السلوك",
+      "title_fr": "Fondement psychologique",
+      "text": "تثبت الدراسات في علم نفس المراهقة أنّ السلوك الاندفاعي أو العدواني ينتج غالباً عن قصور في التعبير الرمزي اللفظي. الفنون (الموسيقى، التشكيل، المسرح) تعمل كقنوات تطهير انفعالي (Catharsis)، تنقل الطاقة المتوتّرة إلى طاقة بنّاءة وجمالية مقبولة اجتماعياً.",
+      "text_fr": "L'agressivité naît souvent d'un déficit d'expression symbolique. Les arts agissent comme des canaux de catharsis qui transforment la tension en énergie constructive et esthétique."
+    },
+    {
+      "title": "استراتيجية الأقران والسفراء (Peer Mediation)",
+      "title_fr": "Médiation par les pairs",
+      "text": "التحوّل الجذري تمثّل في تدريب التلاميذ المستفيدين من النواة الأولى ليصبحوا وسطاء سلام داخل أقسامهم. هذا الانتقال كسر الحواجز النفسية بين التلاميذ وخلق مناخاً مدرسياً آمناً ومحفّزاً.",
+      "text_fr": "Les élèves de la première cellule ont été formés pour devenir médiateurs de paix dans leurs classes, brisant les barrières et créant un climat scolaire sûr et stimulant."
+    }
+  ],
+  "stats_title": "مؤشرات الأثر والنتائج الميدانية المسجّلة",
+  "stats_title_fr": "Indicateurs d'impact",
+  "stats": [
+    {
+      "value": "-65%",
+      "label": "تراجع العنف والنزاعات",
+      "label_fr": "Baisse des violences et conflits",
+      "tone": "rose"
+    },
+    {
+      "value": "+85%",
+      "label": "نسبة الانخراط والإصغاء",
+      "label_fr": "Engagement et écoute",
+      "tone": "green"
+    },
+    {
+      "value": "80+",
+      "label": "لوحة تشكيلية منجزة",
+      "label_fr": "Œuvres plastiques réalisées",
+      "tone": "violet"
+    },
+    {
+      "value": "100%",
+      "label": "تكامل ورشات الإبداع",
+      "label_fr": "Intégration des ateliers créatifs",
+      "tone": "sky"
+    }
+  ],
+  "songs_title": "المسار التدرّجي للأغاني وأبعادها النفسية والتربوية",
+  "songs_title_fr": "Le parcours des chansons et leurs dimensions psycho-pédagogiques",
+  "songs": [
+    {
+      "title": "اِسْمَعْ قَلْبِي",
+      "stage": "المرحلة 1 : كسر قناع العنف",
+      "lyrics": "كُنْتُ أَحْسَبُ أَنَّ الصَّوْتَ قُوَّة... وَأَنَّ الْغَضَبَ دِرْعٌ يَحْمِينِي\nحَتَّى سَمِعْتُ نَبْضَ قَلْبِي يَقُول:\nاِسْمَعْ صَوْتِي... اِسْمَعْ قَلْبِي... لَسْتُ عَدُوَّكَ بَلْ أَنَا مِنْكَ\nلَا بِالْيَدِ نَبْنِي الْغَدَا... بَلْ بِالْفَنِّ وَالصَّوْتِ الْجَمِيلِ نَلْتَقِي",
+      "psych": "المراهق يلجأ غالباً للصراخ والعنف كقناع لحماية هشاشته الداخلية وتفادي الشعور بالدونية؛ تدعو الأغنية إلى مصالحة وجدانية تبيّن أنّ القوّة الحقيقية تكمن في الإصغاء والتهدئة لا الصدام.",
+      "edu": "تأسيس ثقافة الحوار وقبول الآخر، وكسر حدّة المشاحنات داخل الفضاء المدرسي بنقل الانفعال المتوتّر إلى تفريغ صوتي منضبط.",
+      "image": "media/web/song-ismaa-kalbi.jpg",
+      "audio": "https://drive.google.com/file/d/12ODltf6KtuBXg5V_5GnzJO1TtEfJO6ch/preview#audio",
+      "video": "https://drive.google.com/file/d/1Vb8KUMEd7S9YSWngmcp59PlN0z4Y6KhG/preview"
+    },
+    {
+      "title": "يَا مَدَارِسَ تُونِسْ",
+      "stage": "المرحلة 2 : النداء المؤسساتي والتطبيع الجمالي",
+      "lyrics": "يا مدارس تونس غنّي وأرسمي ... بالفنّ والمحبّة داوي وحسّني\nخلّي الموسيقى تعمّر كل أركان ... والعنف يولّي ذكرى أيّام زمان\nهالفنّ يجي يداوي الأجراح ... ويرجّع القلوب أمان وأفراح",
+      "psych": "إشراك التلميذ في بيئة داعمة ومطمئنة؛ استحضار الآلات التراثية (كمنجة، قانون، عود، ناي) يحقّق تفريغاً وجدانياً يعيد التوازن الداخلي ويبدّد مشاعر الإحباط.",
+      "edu": "توطيد الصلة الإيجابية بالمؤسسة التربوية وترسيخ قيم الانتماء وبناء الوطن بالتعلّم المشترك والتعبير الفنّي السليم.",
+      "image": "media/web/song-ya-mdares.jpg",
+      "audio": "https://drive.google.com/file/d/13UQC4Ndy7wF-Pr9AHhjsdeCnx7L9smCC/preview#audio",
+      "video": "https://drive.google.com/file/d/16x5sxeM2jOcDypqIT_wwSmYQ3RAs3BbK/preview"
+    },
+    {
+      "title": "نَصِيحَة",
+      "stage": "المرحلة 3 : الخطاب التوجيهي والوقاية السلوكية",
+      "lyrics": "نَصِيحَة مِنِّي لِيكْ يَا صَاحْبِي اسْمَعْهَا ... الْكِلْمَة الْخَايْبَة فِي فُمَّكْ بَلْعْهَا\nالْعُنْفْ مَا يَبْنِي حِيطَانْ ... وَالْغَضَبْ يَهْلِكْ الْإِنْسَانْ\nخُوذْ الْقَلَمْ وَارْسِمْ طَرِيقْ النُّورْ ... بِالْفَنِّ وَالْأَخْلَاقْ عَالَمْنَا يَدُورْ",
+      "psych": "تنمية قدرة التلميذ على التمهّل وضبط ردود الأفعال اللحظية وتوجيه طاقة التوتّر إلى صياغة بدائل إيجابية غير مؤذية.",
+      "edu": "إشاعة روح التآخي والتناصح الودّي وحماية الفضاء المدرسي المشترك من التراشق اللفظي والسلوك العدائي.",
+      "image": "media/web/song-nasiha.jpg",
+      "audio": "https://drive.google.com/file/d/1TsxHs0uDv-ys2CE7W8fdlJxHe-6q5L9c/preview#audio",
+      "video": "https://drive.google.com/file/d/1X4H6qisBzJXru7SjQPHrjmodg4zFlksi/preview"
+    },
+    {
+      "title": "فُسْحَةُ إِبْدَاعٍ وَالْفَنُّ جَمَّاع (حكاية جاد)",
+      "stage": "المرحلة 4 : وساطة الأقران والقدوة",
+      "lyrics": "فسحة ابداع والفنّ جمّاع ... اسمع ياسامع حكاية هاللاّمع\nالفنّ دواء للعنف نجى ... جاد في رواية أشر حكاية",
+      "psych": "إبراز نموذج ملهم من واقع التلاميذ؛ شخصية «جاد» تبرهن عملياً أنّ الانخراط في النشاط الفنّي كفيل بتحويل العزلة أو الشغب إلى تميّز وقيادة إيجابية.",
+      "edu": "اعتماد لغة الأنداد التي يتقبّلها المراهق بسلاسة، ممّا يرفع من فاعلية التوجيه الذاتي داخل الجماعة التلمذية.",
+      "image": "media/web/show-art-remede.jpg",
+      "audio": "",
+      "video": "https://drive.google.com/file/d/1p8RWYKZk2x5TROewPPyb-uVQE4pdSWwS/preview"
+    },
+    {
+      "title": "تَنْمُو عَنَاصِرِي وَتَرْتَفِعُ (الدرس الشاهد)",
+      "stage": "المرحلة 5 : التكامل الحسّي الحركي",
+      "lyrics": "تَنْمُو عَنَاصِرِي وَتَرْتَفِعُ ... نَبَاتِي يَنْمُو ... أَزْهَارِي تَتَفَتَّحُ\nفِي السَّطْحِ تَلْتَقِي الْأَلْوَانُ حَيَّةً ... نَاتِئٌ وَغَائِرٌ يُحَاكِي الْفَضَاءَ\nمِنْ جَذْرِ فِكْرَةٍ إِلَى وَرْدَةِ سَلَامٍ ... نَبْنِي الْجَمَالَ وَنَرْتَقِي مَعًا",
+      "psych": "المواءمة بين الإيقاع الموسيقي وحركة اليد في التشكيل؛ فكرة نموّ النبات تعكس التسامي السلوكي والارتقاء بالنفس نحو الإنتاج البصري الهادف.",
+      "edu": "تفعيل السند الصوتي والموسيقي لتيسير إدراك المفاهيم التشكيلية المجرّدة كالعلاقات الفضائية، التراكب، والتناغم اللوني.",
+      "image": "media/web/fleur-relief.jpg",
+      "audio": "https://drive.google.com/file/d/1gNtS3j09d-l9Q00uqRTVrjRIbTGvjD0g/preview#audio",
+      "video": ""
+    },
+    {
+      "title": "سيمفونية كوساما « نُقْطَةٌ… ثُمَّ نُقْطَةٌ »",
+      "stage": "المرحلة 6 : الفلسفة الكونية واللانهاية",
+      "lyrics": "نُقْطَةٌ… ثُمَّ نُقْطَةٌ… هٰكَذَا ابْتَدَأَتِ الْحِكَايَةُ\nبِذْرَةُ لَوْنٍ فِي أَرْضٍ عَطْشَى فَأَنْجَبَتِ الْحَيَاةَ\nتَدُورُ الْأَرْضُ وَتَتَّسِعُ الدَّوَائِرُ\nوَكُلُّ لَمْسَةِ وَعْيٍ تُنْشِئُ عَالَمًا جَدِيدًا",
+      "psych": "تخفيف التمركز الفردي الحادّ؛ إدراك التلميذ لموقعه المتواضع كجزء من كلّ كوني فسيح يسهم في خفض نزعات الهيمنة والتنمّر.",
+      "edu": "الربط بين سلامة البيئة وصحّة المجتمع النفسية، وتوجيه حيوية التلاميذ نحو المبادرات الخضراء وحماية المحيط المدرسي.",
+      "image": "media/web/kusama-poster.jpg",
+      "audio": "",
+      "video": ""
+    }
+  ],
+  "resources_title": "سندات ومخطّطات مرجعية",
+  "resources_title_fr": "Supports et schémas de référence",
+  "resources": [
+    {
+      "image": "media/web/parcours-transformation.jpg",
+      "caption": "مسار التحوّل: من العنف إلى القيادة"
+    },
+    {
+      "image": "media/web/infographie-violence.jpg",
+      "caption": "خريطة تربوية: التحوّل من العنف إلى الوعي"
+    },
+    {
+      "image": "media/web/show-valeurs.jpg",
+      "caption": "القيم في العرض: كيف ظهرت وفي أيّ مشهد"
+    },
+    {
+      "image": "media/web/valeurs-patrimoine.jpg",
+      "caption": "منظومة القيم التونسية: قيم التراث التربوي"
+    },
+    {
+      "image": "media/web/poster-ismaa-kalbi.jpg",
+      "caption": "ملصق أغنية «إسمع قلبي»"
+    }
+  ]
+}

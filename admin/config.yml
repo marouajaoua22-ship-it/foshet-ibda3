@@ -1,0 +1,424 @@
+# =========================================================
+#  Decap CMS — لوحة التحكم في موقع «فُسحة إبداع»
+#  Chaque page du site lit un fichier JSON du dossier content/.
+#  Cette configuration permet de les modifier depuis le navigateur.
+# =========================================================
+
+# ---------- 1. BACKEND ----------
+# A) Travail LOCAL sur votre PC (recommandé pour commencer) :
+#    lancez « lancer_cms.bat » (ou :  npx decap-server  +  python -m http.server 8080)
+#    puis ouvrez http://localhost:8080/admin/
+#    → les modifications sont écrites directement dans content/*.json
+local_backend: true
+
+# B) EN LIGNE (site Netlify) : chaque « Publier » crée un commit dans ce dépôt GitHub ;
+#    Netlify, relié au dépôt, republie le site automatiquement (≈ 30 s).
+#    Connexion : bouton « Login with GitHub » (compte ayant le droit d'écriture sur le dépôt).
+#    Prérequis Netlify : OAuth GitHub configuré (voir README, section « Publication automatique »).
+backend:
+  name: github
+  repo: marouajaoua22-ship-it/foshet-ibda3
+  branch: main
+  base_url: https://api.netlify.com
+  auth_endpoint: auth
+  commit_messages:
+    create: "Ajout {{collection}} « {{slug}} » (via l'admin)"
+    update: "Mise à jour {{collection}} « {{slug}} » (via l'admin)"
+    delete: "Suppression {{collection}} « {{slug}} » (via l'admin)"
+    uploadMedia: "Ajout média « {{path}} » (via l'admin)"
+    deleteMedia: "Suppression média « {{path}} » (via l'admin)"
+
+locale: fr
+site_url: ../
+display_url: ../
+logo_url: ../media/web/show-titre.jpg
+
+# ---------- 2. MÉDIAS ----------
+# Les images envoyées depuis l'admin sont rangées ici (avec les images optimisées du site) :
+media_folder: media/web
+public_folder: media/web
+
+# ---------- 3. CHAMPS RÉUTILISABLES (ancres YAML) ----------
+x-hints:
+  video_hint: &video_hint "الصق رابط Google Drive (أيّ صيغة: ‎/view‎ أو ‎/edit‎ — يُحوَّل تلقائياً إلى ‎/preview‎) أو رابط YouTube. لا تضع ملفات فيديو أو صوت داخل الموقع (Netlify يرفض الملفات الثقيلة). — Lien Drive ou YouTube uniquement."
+  drive_tip: &drive_tip "تأكّد أنّ ملفّ Drive مشارك بصيغة «أيّ شخص لديه الرابط — قارئ». / Partage Drive : « Tous les utilisateurs disposant du lien — Lecteur »."
+  fr_hint: &fr_hint "اختياري — يظهر عند التبديل إلى الفرنسية. / Optionnel — affiché en mode français."
+
+x-fields:
+  tip_fields: &tip_fields
+    - { label: "العنوان / Titre", name: "title", widget: "string" }
+    - { label: "النصّ / Texte", name: "text", widget: "text", required: false }
+
+  step_fields: &step_fields
+    - { label: "عنوان الخطوة / Titre", name: "title", widget: "string" }
+    - { label: "النصّ (‎**عريض**‎ مسموح) / Texte", name: "text", widget: "text", required: false }
+    - { label: "فيديو / Vidéo", name: "video", widget: "string", required: false, hint: *video_hint }
+    - { label: "صورة / Image", name: "image", widget: "image", required: false }
+    - label: "توجيهات / Consignes"
+      name: "tips"
+      widget: "list"
+      required: false
+      summary: "{{fields.title}}"
+      fields: *tip_fields
+
+  lesson_fields: &lesson_fields
+    - { label: "الشارة / Badge (ex. مشروع عدد 1)", name: "badge", widget: "string" }
+    - { label: "عنوان الدرس / Titre", name: "title", widget: "string" }
+    - { label: "الإعداد والإشراف / Crédits", name: "credits", widget: "string", required: false }
+    - { label: "تقديم (‎**عريض**‎ مسموح) / Description", name: "description", widget: "text", required: false }
+    - { label: "البطاقة الرسمية للدرس (صورة) / Fiche", name: "fiche_image", widget: "image", required: false }
+    - { label: "تعليق البطاقة / Légende de la fiche", name: "fiche_caption", widget: "string", required: false }
+    - { label: "عنوان قسم السندات / Titre « supports »", name: "supports_title", widget: "string", required: false }
+    - label: "السندات (صور) / Supports"
+      name: "supports"
+      widget: "list"
+      required: false
+      summary: "{{fields.title}}"
+      fields:
+        - { label: "العنوان / Titre", name: "title", widget: "string" }
+        - { label: "الصورة / Image", name: "image", widget: "image", required: false }
+        - { label: "التعليق / Légende", name: "caption", widget: "string", required: false }
+    - { label: "عنوان قسم الأبعاد / Titre « dimensions »", name: "dimensions_title", widget: "string", required: false }
+    - label: "الأبعاد / Dimensions"
+      name: "dimensions"
+      widget: "list"
+      required: false
+      summary: "{{fields.title}}"
+      fields: *tip_fields
+    - { label: "عنوان قسم الخطوات / Titre « étapes »", name: "steps_title", widget: "string", required: false }
+    - label: "الخطوات التفاعلية / Étapes (stepper)"
+      name: "steps"
+      widget: "list"
+      required: false
+      summary: "{{fields.title}}"
+      fields: *step_fields
+    - { label: "عنوان مكتبة الفيديوهات / Titre « vidéos »", name: "videos_title", widget: "string", required: false }
+    - label: "فيديوهات الدرس / Vidéos de la leçon"
+      name: "videos"
+      widget: "list"
+      required: false
+      summary: "{{fields.title}}"
+      hint: *drive_tip
+      fields:
+        - { label: "العنوان / Titre", name: "title", widget: "string" }
+        - { label: "الرابط / Lien", name: "url", widget: "string", required: false, hint: *video_hint }
+        - { label: "وصف / Description", name: "description", widget: "text", required: false }
+    - { label: "عرض محاكاة الذكاء الاصطناعي / Démo IA (simulation)", name: "ml_demo", widget: "boolean", default: false, required: false }
+    - { label: "رابط تطبيق الذكاء الاصطناعي الحقيقي / Lien de l'app IA réelle", name: "ml_app_url", widget: "string", required: false, hint: "إن وُجد رابط، يُعرض التطبيق الحقيقي بدل المحاكاة. / Si renseigné, remplace la simulation." }
+    - { label: "صورة التطبيق / Capture de l'app", name: "ml_image", widget: "image", required: false }
+
+  subject_fields: &subject_fields
+    - { label: "العنوان / Titre", name: "title", widget: "string" }
+    - { label: "Titre (FR)", name: "title_fr", widget: "string", required: false, hint: *fr_hint }
+    - { label: "مقدّمة / Introduction", name: "intro", widget: "text", required: false }
+    - { label: "Introduction (FR)", name: "intro_fr", widget: "text", required: false, hint: *fr_hint }
+    - { label: "صورة الغلاف / Image de couverture", name: "cover_image", widget: "image", required: false }
+    - label: "الدروس / Leçons"
+      name: "lessons"
+      widget: "list"
+      summary: "{{fields.badge}} — {{fields.title}}"
+      fields: *lesson_fields
+
+# ---------- 4. COLLECTIONS ----------
+collections:
+  - name: "site"
+    label: "فُسحة إبداع — المحتوى / Contenu"
+    editor: { preview: false }
+    files:
+
+      # ================= لوحة القيادة =================
+      - name: "settings"
+        label: "1 · لوحة القيادة والفريق / Tableau de bord"
+        file: "content/settings.json"
+        fields:
+          - { label: "اسم الموقع / Titre (AR)", name: "site_title", widget: "string" }
+          - { label: "Titre (FR)", name: "site_title_fr", widget: "string" }
+          - { label: "الشعار / Slogan", name: "tagline", widget: "string" }
+          - { label: "Slogan (FR)", name: "tagline_fr", widget: "string", required: false }
+          - { label: "تقديم قصير / Description", name: "description", widget: "text" }
+          - { label: "Description (FR)", name: "description_fr", widget: "text", required: false }
+          - { label: "الشراكة / Partenariat", name: "partnership", widget: "string" }
+          - { label: "Partenariat (FR)", name: "partnership_fr", widget: "string", required: false }
+          - { label: "صورة الواجهة / Image d'accueil", name: "hero_image", widget: "image", required: false }
+          - { label: "الفيديو التقديمي / Vidéo de présentation", name: "hero_video", widget: "string", required: false, hint: *video_hint }
+          - { label: "عنوان الفيديو التقديمي", name: "hero_video_title", widget: "string", required: false }
+          - { label: "Titre vidéo (FR)", name: "hero_video_title_fr", widget: "string", required: false }
+          - { label: "عنوان قسم الفريق / Titre équipe", name: "team_title", widget: "string" }
+          - { label: "Titre équipe (FR)", name: "team_title_fr", widget: "string", required: false }
+          - label: "الفريق التربوي / Équipe"
+            name: "team"
+            widget: "list"
+            summary: "{{fields.name}} — {{fields.role}}"
+            fields:
+              - { label: "الاسم / Nom (AR)", name: "name", widget: "string" }
+              - { label: "Nom (FR)", name: "name_fr", widget: "string", required: false }
+              - { label: "المادّة / Discipline (AR)", name: "role", widget: "string" }
+              - { label: "Discipline (FR)", name: "role_fr", widget: "string", required: false }
+              - { label: "المؤسّسة / Établissement", name: "school", widget: "string", required: false }
+              - { label: "Établissement (FR)", name: "school_fr", widget: "string", required: false }
+              - { label: "اللون / Couleur", name: "subject", widget: "select", options: [ { label: "تربية موسيقية / Musique", value: "musique" }, { label: "تربية تشكيلية / Arts plastiques", value: "plastique" } ] }
+              - { label: "صورة شخصية / Photo", name: "photo", widget: "image", required: false }
+          - { label: "عبارة المتابعة / Libellé suivi", name: "supervision_label", widget: "string", required: false }
+          - { label: "Libellé suivi (FR)", name: "supervision_label_fr", widget: "string", required: false }
+          - label: "المتفقّدون / Inspecteurs"
+            name: "inspectors"
+            widget: "list"
+            required: false
+            summary: "{{fields.name}}"
+            fields:
+              - { label: "الاسم", name: "name", widget: "string" }
+              - { label: "Nom (FR)", name: "name_fr", widget: "string", required: false }
+              - { label: "الصفة", name: "role", widget: "string" }
+              - { label: "Fonction (FR)", name: "role_fr", widget: "string", required: false }
+          - label: "البطاقة 1 — الإطار البيداغوجي"
+            name: "card_pedagogie"
+            widget: "object"
+            fields: &card_fields
+              - { label: "Libellé (FR)", name: "label", widget: "string" }
+              - { label: "العنوان", name: "title", widget: "string" }
+              - { label: "Titre (FR)", name: "title_fr", widget: "string", required: false }
+              - { label: "الوصف", name: "description", widget: "text" }
+              - { label: "Description (FR)", name: "description_fr", widget: "text", required: false }
+              - { label: "الصورة / Image", name: "image", widget: "image", required: false }
+          - { label: "البطاقة 2 — مسار القسم والمغامرة", name: "card_parcours", widget: "object", fields: *card_fields }
+          - { label: "البطاقة 3 — مكتبة الوسائط", name: "card_mediatheque", widget: "object", fields: *card_fields }
+          - { label: "تذييل الصفحة / Pied de page", name: "footer", widget: "string", required: false }
+          - { label: "Pied de page (FR)", name: "footer_fr", widget: "string", required: false }
+
+      # ================= الإطار البيداغوجي =================
+      - name: "pedagogie"
+        label: "2 · الإطار البيداغوجي / Ingénierie pédagogique"
+        file: "content/pedagogie.json"
+        fields:
+          - { label: "العنوان", name: "title", widget: "string" }
+          - { label: "Titre (FR)", name: "title_fr", widget: "string", required: false }
+          - { label: "مقدّمة (‎**عريض**‎ مسموح)", name: "intro", widget: "text" }
+          - { label: "Introduction (FR)", name: "intro_fr", widget: "text", required: false }
+          - label: "الفقرات (نصّ + صورة) / Sections"
+            name: "sections"
+            widget: "list"
+            summary: "{{fields.title}}"
+            fields:
+              - { label: "العنوان", name: "title", widget: "string" }
+              - { label: "Titre (FR)", name: "title_fr", widget: "string", required: false }
+              - { label: "النصّ (سطر فارغ = فقرة جديدة)", name: "text", widget: "text" }
+              - { label: "Texte (FR)", name: "text_fr", widget: "text", required: false }
+              - { label: "الصورة", name: "image", widget: "image", required: false }
+              - { label: "تعليق الصورة", name: "image_caption", widget: "string", required: false }
+          - { label: "عنوان مسار التحوّل", name: "transformation_title", widget: "string" }
+          - { label: "Titre transformation (FR)", name: "transformation_title_fr", widget: "string", required: false }
+          - label: "مراحل التحوّل / Étapes de transformation"
+            name: "transformation"
+            widget: "list"
+            summary: "{{fields.stage}}"
+            fields:
+              - { label: "المرحلة", name: "stage", widget: "string" }
+              - { label: "Étape (FR)", name: "stage_fr", widget: "string", required: false }
+              - { label: "الشرح", name: "text", widget: "string" }
+              - { label: "Explication (FR)", name: "text_fr", widget: "string", required: false }
+          - label: "الإطار النظري / Cadre théorique"
+            name: "theory"
+            widget: "list"
+            summary: "{{fields.title}}"
+            fields:
+              - { label: "العنوان", name: "title", widget: "string" }
+              - { label: "Titre (FR)", name: "title_fr", widget: "string", required: false }
+              - { label: "النصّ", name: "text", widget: "text" }
+              - { label: "Texte (FR)", name: "text_fr", widget: "text", required: false }
+          - { label: "عنوان المؤشّرات", name: "stats_title", widget: "string" }
+          - { label: "Titre indicateurs (FR)", name: "stats_title_fr", widget: "string", required: false }
+          - label: "مؤشّرات الأثر / Indicateurs"
+            name: "stats"
+            widget: "list"
+            summary: "{{fields.value}} — {{fields.label}}"
+            fields:
+              - { label: "القيمة (ex. -65%)", name: "value", widget: "string" }
+              - { label: "التسمية", name: "label", widget: "string" }
+              - { label: "Libellé (FR)", name: "label_fr", widget: "string", required: false }
+              - { label: "اللون", name: "tone", widget: "select", options: ["rose", "green", "violet", "sky"], default: "violet" }
+          - { label: "عنوان قسم الأغاني", name: "songs_title", widget: "string" }
+          - { label: "Titre chansons (FR)", name: "songs_title_fr", widget: "string", required: false }
+          - label: "الأغاني وأبعادها / Chansons"
+            name: "songs"
+            widget: "list"
+            summary: "{{fields.title}}"
+            fields:
+              - { label: "عنوان الأغنية", name: "title", widget: "string" }
+              - { label: "المرحلة", name: "stage", widget: "string", required: false }
+              - { label: "مقتطف من الكلمات", name: "lyrics", widget: "text", required: false }
+              - { label: "البُعد النفسي", name: "psych", widget: "text", required: false }
+              - { label: "الأثر التربوي", name: "edu", widget: "text", required: false }
+              - { label: "صورة / ملصق", name: "image", widget: "image", required: false }
+              - { label: "تسجيل صوتي (mp3 أو Drive)", name: "audio", widget: "string", required: false, hint: *video_hint }
+              - { label: "فيديو", name: "video", widget: "string", required: false, hint: *video_hint }
+          - { label: "عنوان قسم السندات", name: "resources_title", widget: "string", required: false }
+          - { label: "Titre supports (FR)", name: "resources_title_fr", widget: "string", required: false }
+          - label: "سندات ومخطّطات (صور) / Supports"
+            name: "resources"
+            widget: "list"
+            required: false
+            summary: "{{fields.caption}}"
+            fields:
+              - { label: "الصورة", name: "image", widget: "image" }
+              - { label: "التعليق", name: "caption", widget: "string", required: false }
+
+      # ================= التربية التشكيلية =================
+      - name: "plastique"
+        label: "3 · التربية التشكيلية / Arts plastiques"
+        file: "content/plastique.json"
+        fields: *subject_fields
+
+      # ================= التربية الموسيقية =================
+      - name: "musique"
+        label: "4 · التربية الموسيقية / Éducation musicale"
+        file: "content/musique.json"
+        fields: *subject_fields
+
+      # ================= المغامرة =================
+      - name: "aventure"
+        label: "5 · المغامرة الكبرى / La grande aventure"
+        file: "content/aventure.json"
+        fields:
+          - { label: "العنوان", name: "title", widget: "string" }
+          - { label: "Titre (FR)", name: "title_fr", widget: "string", required: false }
+          - { label: "الشارة", name: "badge", widget: "string", required: false }
+          - { label: "مقدّمة", name: "intro", widget: "text", required: false }
+          - { label: "Introduction (FR)", name: "intro_fr", widget: "text", required: false }
+          - { label: "عنوان القصّة المصوّرة", name: "storyboard_title", widget: "string", required: false }
+          - label: "حكاية جاد بالصور / Storyboard"
+            name: "storyboard"
+            widget: "list"
+            required: false
+            summary: "{{fields.caption}}"
+            fields:
+              - { label: "الصورة", name: "image", widget: "image" }
+              - { label: "تعليق المشهد", name: "caption", widget: "string", required: false }
+          - label: "محطّات اللعبة التفاعلية / Étapes du jeu"
+            name: "stations"
+            widget: "list"
+            summary: "{{fields.kind}} — {{fields.title}}"
+            fields:
+              - label: "نوع المحطّة / Type"
+                name: "kind"
+                widget: "select"
+                options:
+                  - { label: "فيديو / Vidéo", value: "video" }
+                  - { label: "خطوات متسلسلة / Sous-étapes", value: "steps" }
+                  - { label: "سؤال تحدٍّ / Quiz", value: "quiz" }
+                  - { label: "التتويج / Final", value: "final" }
+              - { label: "العنوان", name: "title", widget: "string" }
+              - { label: "النصّ", name: "text", widget: "text", required: false }
+              - { label: "اقتباس (على لسان جاد)", name: "quote", widget: "text", required: false }
+              - { label: "فيديو", name: "video", widget: "string", required: false, hint: *video_hint }
+              - { label: "نصّ زرّ المرور", name: "next_label", widget: "string", required: false }
+              - label: "الخطوات (لنوع «خطوات») / Sous-étapes"
+                name: "substeps"
+                widget: "list"
+                required: false
+                summary: "{{fields.title}}"
+                fields:
+                  - { label: "العنوان", name: "title", widget: "string" }
+                  - { label: "النصّ", name: "text", widget: "text", required: false }
+                  - { label: "فيديو", name: "video", widget: "string", required: false, hint: *video_hint }
+                  - label: "صور"
+                    name: "images"
+                    widget: "list"
+                    required: false
+                    summary: "{{fields.caption}}"
+                    fields:
+                      - { label: "الصورة", name: "image", widget: "image" }
+                      - { label: "التعليق", name: "caption", widget: "string", required: false }
+                  - { label: "توجيهات", name: "tips", widget: "list", required: false, summary: "{{fields.title}}", fields: *tip_fields }
+                  - { label: "رسالة التحفيز عند الإتمام", name: "success", widget: "string", required: false }
+              - label: "السؤال (لنوع «سؤال») / Quiz"
+                name: "quiz"
+                widget: "object"
+                required: false
+                collapsed: true
+                fields:
+                  - { label: "السؤال", name: "question", widget: "string", required: false }
+                  - label: "الاختيارات"
+                    name: "options"
+                    widget: "list"
+                    required: false
+                    summary: "{{fields.label}}"
+                    fields:
+                      - { label: "الاختيار", name: "label", widget: "string" }
+                      - { label: "إجابة صحيحة؟", name: "correct", widget: "boolean", default: false }
+                  - { label: "رسالة النجاح", name: "success", widget: "string", required: false }
+                  - { label: "رسالة الخطأ", name: "error", widget: "string", required: false }
+          - { label: "عنوان التوثيق الصفّي", name: "class_title", widget: "string", required: false }
+          - label: "مراحل التوثيق في القسم / Documentation en classe"
+            name: "class_phases"
+            widget: "list"
+            summary: "{{fields.badge}}"
+            fields:
+              - { label: "الشارة", name: "badge", widget: "string" }
+              - { label: "العنوان", name: "title", widget: "string" }
+              - { label: "النصّ", name: "text", widget: "text", required: false }
+              - { label: "فيديو القسم", name: "video", widget: "string", required: false, hint: *video_hint }
+              - { label: "المادّة / Couleur", name: "subject", widget: "select", options: [ { label: "موسيقى", value: "musique" }, { label: "تشكيل", value: "plastique" }, { label: "مشترك", value: "commun" } ] }
+          - { label: "عنوان سلسلة الفيديوهات", name: "playlist_title", widget: "string", required: false }
+          - label: "سلسلة فيديوهات المغامرة / Playlist"
+            name: "playlist"
+            widget: "list"
+            required: false
+            summary: "{{fields.title}}"
+            fields:
+              - { label: "العنوان", name: "title", widget: "string" }
+              - { label: "الرابط", name: "url", widget: "string", required: false, hint: *video_hint }
+
+      # ================= مكتبة الوسائط =================
+      - name: "mediatheque"
+        label: "6 · مكتبة الوسائط / Médiathèque"
+        file: "content/mediatheque.json"
+        fields:
+          - { label: "العنوان", name: "title", widget: "string" }
+          - { label: "Titre (FR)", name: "title_fr", widget: "string", required: false }
+          - { label: "مقدّمة", name: "intro", widget: "text", required: false }
+          - { label: "Introduction (FR)", name: "intro_fr", widget: "text", required: false }
+          - label: "التصنيفات / Catégories"
+            name: "categories"
+            widget: "list"
+            summary: "{{fields.key}} — {{fields.label}}"
+            hint: "المفتاح (key) يُستعمل في حقل «التصنيف» لكلّ عنصر. / La clé sert dans le champ « catégorie »."
+            fields:
+              - { label: "المفتاح (بدون مسافات)", name: "key", widget: "string" }
+              - { label: "التسمية", name: "label", widget: "string" }
+              - { label: "Libellé (FR)", name: "label_fr", widget: "string", required: false }
+          - label: "الفيديوهات / Vidéos"
+            name: "videos"
+            widget: "list"
+            summary: "{{fields.category}} · {{fields.title}}"
+            hint: *drive_tip
+            fields:
+              - { label: "العنوان", name: "title", widget: "string" }
+              - { label: "الرابط", name: "url", widget: "string", required: false, hint: *video_hint }
+              - { label: "التصنيف (key)", name: "category", widget: "string", default: "projet" }
+              - { label: "وصف", name: "description", widget: "text", required: false }
+          - label: "التسجيلات الصوتية / Audio"
+            name: "audios"
+            widget: "list"
+            summary: "{{fields.title}}"
+            fields:
+              - { label: "العنوان", name: "title", widget: "string" }
+              - { label: "الرابط (mp3 أو Drive)", name: "url", widget: "string", hint: *video_hint }
+              - { label: "التصنيف (key)", name: "category", widget: "string", default: "musique" }
+          - label: "الصور / Images"
+            name: "images"
+            widget: "list"
+            summary: "{{fields.caption}}"
+            fields:
+              - { label: "الصورة", name: "image", widget: "image" }
+              - { label: "التعليق", name: "caption", widget: "string", required: false }
+              - { label: "التصنيف (key)", name: "category", widget: "string", default: "projet" }
+          - label: "الوثائق / Documents"
+            name: "documents"
+            widget: "list"
+            required: false
+            summary: "{{fields.title}}"
+            fields:
+              - { label: "العنوان", name: "title", widget: "string" }
+              - { label: "الرابط أو الملفّ", name: "url", widget: "file", required: false }
+              - { label: "وصف", name: "description", widget: "string", required: false }
+              - { label: "التصنيف (key)", name: "category", widget: "string", default: "projet" }

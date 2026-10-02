@@ -1,0 +1,224 @@
+{
+  "title": "التربية الموسيقية",
+  "title_fr": "Éducation musicale",
+  "intro": "حين يُصغي التلميذ إلى صوته الداخلي، يصبح الفنّ طريقه إلى القيادة: العرض الموسيقي التربوي «فسحة إبداع» ودروس القسم خطوةً بخطوة.",
+  "intro_fr": "Quand l'élève écoute sa voix intérieure, l'art devient son chemin vers le leadership : le spectacle musical éducatif « Foshet Ibda3 » et les leçons en classe pas à pas.",
+  "cover_image": "media/web/orchestre-cour.jpg",
+  "lessons": [
+    {
+      "badge": "العرض الموسيقي التربوي",
+      "title": "« فُسحة إبداع » — الفنّ مسار إصلاح… لا مسار صراع",
+      "credits": "التربية الموسيقية • المدرسة الإعدادية النموذجية خزندار وإعدادية كاراتشي",
+      "description": "عرض موسيقي تربوي متكامل يروي **حكاية جاد**: من الرفض والعزلة إلى قيادة الفرقة المشتركة، عبر محطّات غنائية متدرّجة تمزج التراث التونسي بالإبداع.",
+      "fiche_image": "media/web/show-titre.jpg",
+      "fiche_caption": "فسحة إبداع — عرض موسيقي تربوي",
+      "supports_title": "سندات العرض",
+      "supports": [
+        {
+          "title": "رحلة الإبداع: من الصوت الداخلي إلى القيادة الفنّية",
+          "image": "media/web/show-voyage.jpg",
+          "caption": "حين يُصغي التلميذ إلى صوته الداخلي يصبح الفنّ طريقه إلى القيادة"
+        },
+        {
+          "title": "الفنّ دواء للعنف",
+          "image": "media/web/show-art-remede.jpg",
+          "caption": "فسحة إبداع والفنّ جمّاع"
+        },
+        {
+          "title": "Creative Space",
+          "image": "media/web/show-creative-space.jpg",
+          "caption": "Art education project in Tunisia"
+        }
+      ],
+      "dimensions_title": "رحلة الإبداع: أربع محطّات",
+      "dimensions": [
+        {
+          "title": "صوت التلميذ الداخلي",
+          "text": "فهم الذات • شغف الإبداع • الهدوء والتفكّر"
+        },
+        {
+          "title": "الفنّ طريقاً",
+          "text": "الدراسة والتدريب • الممارسة المستمرّة • التعبير عن الذات"
+        },
+        {
+          "title": "القيادة والانسجام",
+          "text": "قيادة الفريق • خلق الانسجام • التأثير الإيجابي"
+        },
+        {
+          "title": "القيادة التونسية المبتكرة",
+          "text": "الإبداع من التراث • القيادة في الابتكار • بناء تونس"
+        }
+      ],
+      "steps_title": "محطّات العرض خطوةً بخطوة",
+      "steps": [
+        {
+          "title": "المقدّمة",
+          "text": "افتتاح العرض وتقديم حكاية جاد.",
+          "video": "https://drive.google.com/file/d/1Aq_o9YlvNSBzkJWSIv8RQhQK5JZQSKaX/preview",
+          "image": "",
+          "tips": []
+        },
+        {
+          "title": "إسمع قلبي",
+          "text": "كسر قناع العنف: الإصغاء إلى نبض القلب بدل الصراخ.",
+          "video": "https://drive.google.com/file/d/1Vb8KUMEd7S9YSWngmcp59PlN0z4Y6KhG/preview",
+          "image": "media/web/song-ismaa-kalbi.jpg",
+          "tips": []
+        },
+        {
+          "title": "يا مدارس تونس",
+          "text": "النداء المؤسساتي: الفنّ والمحبّة يداويان الجراح.",
+          "video": "https://drive.google.com/file/d/16x5sxeM2jOcDypqIT_wwSmYQ3RAs3BbK/preview",
+          "image": "media/web/song-ya-mdares.jpg",
+          "tips": []
+        },
+        {
+          "title": "لونغا رياض السنباطي",
+          "text": "تراث موسيقي أصيل: طاقة • تركيز • إبداع.",
+          "video": "https://drive.google.com/file/d/1oWfs9Y1zIpaypl0WQzUHy3T0Ki076zme/preview",
+          "image": "media/web/song-lounga.jpg",
+          "tips": []
+        },
+        {
+          "title": "عايروني بيك يا جاد",
+          "text": "قصّة التحرّر من الرفض: وصم ← مقاومة ← إثبات.",
+          "video": "https://drive.google.com/file/d/1DM9VJSg_mxByXxTFIhh0elC1yoxAtCSb/preview",
+          "image": "media/web/song-ayrouni.jpg",
+          "tips": [
+            {
+              "title": "وصم",
+              "text": "تحمّل التهم الباطلة والضغط المجتمعي"
+            },
+            {
+              "title": "مقاومة",
+              "text": "التمسّك بالفنّ كملاذ وقوّة داخلية"
+            },
+            {
+              "title": "إثبات",
+              "text": "تحويل الرفض إلى نجاح وتكامل إبداعي"
+            }
+          ]
+        },
+        {
+          "title": "النصيحة هاك",
+          "text": "الخطاب التوجيهي والوقاية السلوكية.",
+          "video": "https://drive.google.com/file/d/1X4H6qisBzJXru7SjQPHrjmodg4zFlksi/preview",
+          "image": "media/web/song-nasiha.jpg",
+          "tips": []
+        },
+        {
+          "title": "النصيحة هاك — التعليق الصوتي",
+          "text": "",
+          "video": "https://drive.google.com/file/d/1fv8ubdv0ypMy5YNTAar7wKRT8V8ILjAP/preview",
+          "image": "",
+          "tips": []
+        },
+        {
+          "title": "فسحة إبداع والفنّ جمّاع",
+          "text": "الختام: جاد قائداً للفرقة المشتركة.",
+          "video": "https://drive.google.com/file/d/1p8RWYKZk2x5TROewPPyb-uVQE4pdSWwS/preview",
+          "image": "media/web/show-art-remede.jpg",
+          "tips": []
+        }
+      ],
+      "videos_title": "",
+      "videos": [],
+      "ml_demo": false,
+      "ml_app_url": "",
+      "ml_image": ""
+    },
+    {
+      "badge": "الدرس الموسيقي داخل القسم",
+      "title": "تدريس الأقران: المسار البيداغوجي للدرس الموسيقي (4 خطوات)",
+      "credits": "التربية الموسيقية",
+      "description": "يقود التلاميذ «الموسيقيون» زملاءهم عبر أربع خطوات متدرّجة: من الإصغاء إلى الأداء الجماعي.",
+      "fiche_image": "",
+      "fiche_caption": "البطاقة الرسمية للدرس الموسيقي",
+      "supports_title": "السندات",
+      "supports": [
+        {
+          "title": "سند الغناء (الكلمات)",
+          "image": "media/web/paroles.jpg",
+          "caption": "كلمات الأغنية المعتمدة للتحفيظ"
+        },
+        {
+          "title": "سند العزف (المدرج والدرجات)",
+          "image": "media/web/partition.jpg",
+          "caption": "المدرج الموسيقي وقراءة الدرجات"
+        }
+      ],
+      "dimensions_title": "",
+      "dimensions": [],
+      "steps_title": "الخطوات الأربع",
+      "steps": [
+        {
+          "title": "الاستماع والاستكشاف السمعي للأغنية",
+          "text": "**توجيه الأقران:** يصعد قادة مجموعة الموسيقيين لدعوة زملائهم للإصغاء المركّز، وتحديد الطابع العام والرسالة المركزية لمناهضة العنف المدرسي.",
+          "video": "",
+          "image": "",
+          "tips": []
+        },
+        {
+          "title": "الغناء والتحفيظ: الأداء الفردي والجماعي المتدرّج",
+          "text": "",
+          "video": "",
+          "image": "media/web/paroles.jpg",
+          "tips": [
+            {
+              "title": "الإلقاء اللفظي السليم",
+              "text": "نطق مخارج الحروف بتأنٍّ مع مراعاة المقاطع اللفظية دون إيقاع أوّلاً."
+            },
+            {
+              "title": "الغناء بالمحاكاة (Echo)",
+              "text": "يقود التلميذ المميّز المقطع الأوّل، ثمّ يعيد الصفّ ترديده فردياً ثمّ جماعياً."
+            },
+            {
+              "title": "تثبيت الذاكرة الوجدانية",
+              "text": "ربط كلّ شطر غنائي بمعنى السلام لتسهيل الحفظ الراسخ."
+            }
+          ]
+        },
+        {
+          "title": "قراءة الدرجات الموسيقية والتمارين الإيقاعية والصوتية",
+          "text": "**التطبيق:** غناء السلّم الموسيقي بالدرجات، وضبط النبض (Pulsation) بالتصفيق المتزامن لتهدئة حركة التلاميذ.",
+          "video": "",
+          "image": "media/web/partition.jpg",
+          "tips": []
+        },
+        {
+          "title": "الأداء الجماعي المتكامل",
+          "text": "**التتويج الموسيقي:** يقف القسم كأوركسترا واحدة؛ قسم يتولّى الغناء المنسجم، وقسم يرافق بالآلات الإيقاعية (الدفّ، الرقّ) واللحنية (الأورغ / الكمنجة).",
+          "video": "",
+          "image": "",
+          "tips": []
+        }
+      ],
+      "videos_title": "فيديوهات الحصّة",
+      "videos": [
+        {
+          "title": "حصّة الاستماع",
+          "url": "",
+          "description": ""
+        },
+        {
+          "title": "التحفيظ والغناء",
+          "url": "",
+          "description": ""
+        },
+        {
+          "title": "الصولفاج والتمارين الإيقاعية",
+          "url": "",
+          "description": ""
+        },
+        {
+          "title": "الأداء الجماعي",
+          "url": "",
+          "description": ""
+        }
+      ],
+      "ml_demo": false,
+      "ml_app_url": "",
+      "ml_image": ""
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>فُسحة إبداع — Foshet Ibda3</title>
+  <meta name="description" content="فُسحة إبداع — مشروع تربوي مشترك بين التربية الموسيقية والتربية التشكيلية (المدرسة الإعدادية النموذجية خزندار وإعدادية كاراتشي).">
+  <meta name="theme-color" content="#7a1f2b">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">تخطّي إلى المحتوى</a>
+
+  <header class="topbar" id="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="#/" aria-label="فُسحة إبداع — لوحة القيادة">
+        <span class="brand-mark" aria-hidden="true" data-icon="spark"></span>
+        <span class="brand-text">
+          <strong id="brandTitle">فُسحة إبداع</strong>
+          <small id="brandSub">Foshet Ibda3</small>
+        </span>
+      </a>
+
+      <nav class="topnav" aria-label="التنقّل الرئيسي" id="topnav"></nav>
+
+      <div class="topbar-actions">
+        <a class="home-btn" href="#/" id="homeBtn">
+          <span data-icon="home" aria-hidden="true"></span>
+          <span data-i18n="home">لوحة القيادة</span>
+        </a>
+        <button class="lang-btn" id="langBtn" type="button" aria-label="Changer de langue / تغيير اللغة">
+          <span data-icon="globe" aria-hidden="true"></span>
+          <span id="langLabel">FR</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main" tabindex="-1">
+    <div class="loading" id="loading" role="status">
+      <span class="spinner" aria-hidden="true"></span>
+      <span>جارٍ التحميل…</span>
+    </div>
+  </main>
+
+  <footer class="site-footer" id="footer"></footer>
+
+  <dialog id="lightbox" class="lightbox" closedby="any" aria-labelledby="lightboxCaption">
+    <div class="lightbox-head">
+      <p id="lightboxCaption"></p>
+      <button type="button" class="icon-btn" data-close aria-label="إغلاق"><span data-icon="close"></span></button>
+    </div>
+    <img id="lightboxImg" alt="">
+  </dialog>
+
+  <dialog id="player" class="player" closedby="any" aria-labelledby="playerTitle">
+    <div class="lightbox-head">
+      <p id="playerTitle"></p>
+      <button type="button" class="icon-btn" data-close aria-label="إغلاق"><span data-icon="close"></span></button>
+    </div>
+    <div id="playerBody" class="player-body"></div>
+  </dialog>
+
+  <script src="content/fallback.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

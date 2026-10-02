@@ -1,0 +1,289 @@
+{
+  "title": "المغامرة الكبرى: من اللعبة التفاعلية إلى القسم الشاهد",
+  "title_fr": "La grande aventure : du jeu interactif à la classe témoin",
+  "badge": "مشروع عدد 3 • مسار المغامرة والتوثيق الميداني",
+  "intro": "اختر وضع الاستكشاف: عِش المغامرة التفاعلية مع جاد، أو تابع التوثيق الحقيقي لمجريات الدرس بالقسم.",
+  "intro_fr": "Choisissez un mode : vivre l'aventure interactive avec Jad, ou suivre la documentation réelle de la séance en classe.",
+  "storyboard_title": "حكاية جاد بالصور",
+  "storyboard": [
+    {
+      "image": "media/web/story-01.jpg",
+      "caption": ""
+    },
+    {
+      "image": "media/web/story-02.jpg",
+      "caption": ""
+    },
+    {
+      "image": "media/web/story-03.jpg",
+      "caption": ""
+    },
+    {
+      "image": "media/web/story-04.jpg",
+      "caption": ""
+    },
+    {
+      "image": "media/web/story-05.jpg",
+      "caption": ""
+    },
+    {
+      "image": "media/web/story-06.jpg",
+      "caption": ""
+    },
+    {
+      "image": "media/web/story-07.jpg",
+      "caption": ""
+    },
+    {
+      "image": "media/web/story-08.jpg",
+      "caption": ""
+    },
+    {
+      "image": "media/web/story-09.jpg",
+      "caption": ""
+    },
+    {
+      "image": "media/web/story-10.jpg",
+      "caption": ""
+    },
+    {
+      "image": "media/web/story-11.jpg",
+      "caption": ""
+    },
+    {
+      "image": "media/web/story-12.jpg",
+      "caption": ""
+    },
+    {
+      "image": "media/web/story-13.jpg",
+      "caption": ""
+    },
+    {
+      "image": "media/web/story-14.jpg",
+      "caption": ""
+    },
+    {
+      "image": "media/web/story-15.jpg",
+      "caption": ""
+    },
+    {
+      "image": "media/web/story-16.jpg",
+      "caption": ""
+    },
+    {
+      "image": "media/web/story-17.jpg",
+      "caption": ""
+    },
+    {
+      "image": "media/web/story-18.jpg",
+      "caption": ""
+    },
+    {
+      "image": "media/web/story-19.jpg",
+      "caption": ""
+    },
+    {
+      "image": "media/web/story-20.jpg",
+      "caption": ""
+    },
+    {
+      "image": "media/web/story-21.jpg",
+      "caption": ""
+    },
+    {
+      "image": "media/web/story-22.jpg",
+      "caption": ""
+    },
+    {
+      "image": "media/web/story-23.jpg",
+      "caption": ""
+    }
+  ],
+  "stations": [
+    {
+      "kind": "video",
+      "title": "نداء جاد «اسمعوا حكايتي قبل فوات الأوان!»",
+      "text": "",
+      "quote": "«صرخت وغضبت وتوقّفت الموسيقى، وصرت وحيداً في الساحة. هل تساعدني في تجاوز هذا الغضب؟»",
+      "video": "https://drive.google.com/file/d/1qecycBeb8dN-3NTE_PT3MFd8Ih5k3J6D/preview",
+      "next_label": "الانتقال للتحدّي الموسيقي",
+      "substeps": [],
+      "quiz": {
+        "question": "",
+        "options": [],
+        "success": "",
+        "error": ""
+      }
+    },
+    {
+      "kind": "steps",
+      "title": "ورشة مجموعة الموسيقيين — تدريس الأقران (4 خطوات)",
+      "text": "المسار البيداغوجي للدرس الموسيقي: يقود التلاميذ «الموسيقيون» زملاءهم عبر أربع خطوات متدرّجة.",
+      "quote": "",
+      "video": "",
+      "next_label": "تسليم المشعل إلى المحطة الموالية",
+      "substeps": [
+        {
+          "title": "الاستماع والاستكشاف السمعي للأغنية",
+          "text": "**توجيه الأقران:** يصعد قادة مجموعة الموسيقيين لدعوة زملائهم للإصغاء المركّز، وتحديد الطابع العام والرسالة المركزية لمناهضة العنف المدرسي.",
+          "video": "",
+          "images": [],
+          "tips": [],
+          "success": "أحسنت! لقد تمّ الاستكشاف بنجاح، ننتقل الآن إلى مرحلة التحفيظ والغناء الموجّه!"
+        },
+        {
+          "title": "الغناء والتحفيظ: الأداء الفردي والجماعي المتدرّج",
+          "text": "",
+          "video": "",
+          "images": [
+            {
+              "image": "media/web/paroles.jpg",
+              "caption": "كلمات الأغنية المعتمدة للتحفيظ"
+            }
+          ],
+          "tips": [
+            {
+              "title": "1. الإلقاء اللفظي السليم",
+              "text": "نطق مخارج الحروف بتأنٍّ مع مراعاة المقاطع اللفظية دون إيقاع أوّلاً."
+            },
+            {
+              "title": "2. الغناء بالمحاكاة (Echo)",
+              "text": "يقود التلميذ المميّز المقطع الأوّل، ثمّ يعيد الصفّ ترديده فردياً ثمّ جماعياً."
+            },
+            {
+              "title": "3. تثبيت الذاكرة الوجدانية",
+              "text": "ربط كلّ شطر غنائي بمعنى السلام لتسهيل الحفظ الراسخ."
+            }
+          ],
+          "success": "ممتاز! تمّ حفظ الكلمات بإتقان، نمرّ الآن لقراءة الصولفاج والدرجات الموسيقية!"
+        },
+        {
+          "title": "قراءة الدرجات الموسيقية والتمارين الإيقاعية والصوتية",
+          "text": "**التطبيق:** غناء السلّم الموسيقي بالدرجات، وضبط النبض (Pulsation) بالتصفيق المتزامن لتهدئة حركة التلاميذ.",
+          "video": "",
+          "images": [
+            {
+              "image": "media/web/partition.jpg",
+              "caption": "المدرج الموسيقي وقراءة الدرجات"
+            }
+          ],
+          "tips": [],
+          "success": "رائع جداً! تمّ ضبط النبض والدرجات، نحن جاهزون الآن للأداء الجماعي والعزف الموحّد!"
+        },
+        {
+          "title": "الأداء الجماعي المتكامل: انصهار الغناء والعزف المشترك",
+          "text": "**التتويج الموسيقي:** يقف القسم كأوركسترا واحدة؛ قسم يتولّى الغناء المنسجم، وقسم يرافق بالآلات الإيقاعية (الدفّ، الرقّ) واللحنية (الأورغ / الكمنجة) في مشهد يعبّر عن انتصار السلام بالفنّ.",
+          "video": "",
+          "images": [
+            {
+              "image": "media/web/paroles.jpg",
+              "caption": "سند الغناء (الكلمات)"
+            },
+            {
+              "image": "media/web/partition.jpg",
+              "caption": "سند العزف (المدرج والدرجات)"
+            }
+          ],
+          "tips": [],
+          "success": "مبارك! لقد أنجزت مجموعة الموسيقيين مهمّتها وقادت القسم إلى النجاح في هذه المحطة!"
+        }
+      ],
+      "quiz": {
+        "question": "",
+        "options": [],
+        "success": "",
+        "error": ""
+      }
+    },
+    {
+      "kind": "quiz",
+      "title": "نقل النغمة إلى السطح التشكيلي (تَنْمُو عَنَاصِرِي)",
+      "text": "انتقل جاد إلى قاعة التربية التشكيلية لتحويل الهدوء الداخلي إلى عمل مجسّم.",
+      "quote": "",
+      "video": "",
+      "next_label": "",
+      "substeps": [],
+      "quiz": {
+        "question": "كيف نجعل عناصر السطح ترتفع في الفضاء؟",
+        "options": [
+          {
+            "label": "بتراكب الخامات وصنع بروزات ناتئة وفراغات غائرة تجسّم وردة السلام",
+            "correct": true
+          },
+          {
+            "label": "برسم خطّ رمادي أحادي دون ملمس أو حجم",
+            "correct": false
+          }
+        ],
+        "success": "أحسنت! الناتئ والغائر وتراكب الخامات يجسّد روح الدرس الشاهد.",
+        "error": "السطح الرمادي لا يعبّر عن النموّ؛ نحتاج لخامات وأبعاد مجسّمة!"
+      }
+    },
+    {
+      "kind": "final",
+      "title": "اكتملت المغامرة بنجاح!",
+      "text": "أصبح جاد قائداً لأوركسترا العلم وسفيراً للسلام، متوحّداً بين النغمة والمادّة التشكيلية.",
+      "quote": "",
+      "video": "",
+      "next_label": "",
+      "substeps": [],
+      "quiz": {
+        "question": "",
+        "options": [],
+        "success": "",
+        "error": ""
+      }
+    }
+  ],
+  "class_title": "التطبيق والدرس الشاهد في القسم",
+  "class_phases": [
+    {
+      "badge": "المرحلة الأولى • التربية الموسيقية",
+      "title": "تطبيق الدرس الصفّي: تفكيك الغضب والإيقاع الداخلي",
+      "text": "توثيق حيّ للأستاذة وهي تؤطّر التلاميذ في تمارين التنفّس وإدراك النبض الموسيقي ونبذ العنف.",
+      "video": "",
+      "subject": "musique"
+    },
+    {
+      "badge": "المرحلة الثانية • ورشة التشكيل المشترك",
+      "title": "تطبيق الدرس الصفّي: تجسيد الناتئ والغائر في اللوحات",
+      "text": "مشاهد توثيقية للأستاذة والتلاميذ أثناء بناء السطوح التشكيلية وتراكب الخامات بالقسم.",
+      "video": "",
+      "subject": "plastique"
+    },
+    {
+      "badge": "المرحلة الثالثة • الحصيلة الميدانية",
+      "title": "تتويج أعمال التلاميذ وعرض الفرقة المشتركة",
+      "text": "النتيجة النهائية للمشروع: اندماج الموسيقى والتشكيل في معرض مدرسي ومناخ يسوده الأمان والاحترام.",
+      "video": "",
+      "subject": "commun"
+    }
+  ],
+  "playlist_title": "سلسلة فيديوهات المغامرة",
+  "playlist": [
+    {
+      "title": "المغامرة — الجزء 2",
+      "url": "https://drive.google.com/file/d/1-6Ib-yHd5w6YYgsdKYHEwwmgnBxxP1pI/preview"
+    },
+    {
+      "title": "المغامرة — الجزء 3",
+      "url": "https://drive.google.com/file/d/1q-W-a-L8L2JiO_UzquFQ350RQz94kDYX/preview"
+    },
+    {
+      "title": "المغامرة — الجزء 4",
+      "url": "https://drive.google.com/file/d/1yV34_iZ6ieVsDJyiYX2uEz7qYr1JtU_v/preview"
+    },
+    {
+      "title": "المغامرة — الجزء 5",
+      "url": "https://drive.google.com/file/d/1AclgUkCH-pBFd0qelhjYSSSz-uKD14Fe/preview"
+    },
+    {
+      "title": "المغامرة — الجزء 8",
+      "url": "https://drive.google.com/file/d/1aK_y6DZMJ2EJ9Uh5y1Gx-g_PjnsCSLoZ/preview"
+    },
+    {
+      "title": "المغامرة — الدرس (النسخة الكاملة)",
+      "url": "https://drive.google.com/file/d/1tvWnJC9bNcmMjBuZYsJGaQpGY2MuBez6/preview"
+    }
+  ]
+}

@@ -1,0 +1,347 @@
+{
+  "title": "مكتبة الوسائط والتسجيلات",
+  "title_fr": "Médiathèque & enregistrements",
+  "intro": "كلّ موارد المشروع في مكان واحد. الفيديوهات والتسجيلات تُعرض من Google Drive (العرض المباشر ‎/preview‎) أو YouTube، حتى يبقى الموقع خفيفاً وقابلاً للنشر.",
+  "intro_fr": "Toutes les ressources du projet. Vidéos et audios sont lus depuis Google Drive (lecteur /preview) ou YouTube, pour que le site reste léger et publiable.",
+  "categories": [
+    {
+      "key": "musique",
+      "label": "تربية موسيقية",
+      "label_fr": "Éducation musicale"
+    },
+    {
+      "key": "plastique",
+      "label": "تربية تشكيلية",
+      "label_fr": "Arts plastiques"
+    },
+    {
+      "key": "aventure",
+      "label": "المغامرة",
+      "label_fr": "Aventure"
+    },
+    {
+      "key": "projet",
+      "label": "المشروع",
+      "label_fr": "Projet"
+    }
+  ],
+  "videos": [
+    {
+      "title": "الفيديو التقديمي للمشروع",
+      "url": "https://drive.google.com/file/d/1wOo5orw5q5kiXlKRBDkVt8Px1EX39is5/preview",
+      "category": "projet",
+      "description": ""
+    },
+    {
+      "title": "مونتاج المشروع النهائي",
+      "url": "https://drive.google.com/file/d/1DnVlV_oVIwWBRh7JqA2XNjD6z3999iTN/preview",
+      "category": "projet",
+      "description": ""
+    },
+    {
+      "title": "المقدّمة",
+      "url": "https://drive.google.com/file/d/1Aq_o9YlvNSBzkJWSIv8RQhQK5JZQSKaX/preview",
+      "category": "musique",
+      "description": "العرض الموسيقي «فسحة إبداع»"
+    },
+    {
+      "title": "إسمع قلبي",
+      "url": "https://drive.google.com/file/d/1Vb8KUMEd7S9YSWngmcp59PlN0z4Y6KhG/preview",
+      "category": "musique",
+      "description": ""
+    },
+    {
+      "title": "إسمع قلبي (نسخة 2)",
+      "url": "https://drive.google.com/file/d/1l5gxBnUsLe02cdDHBfdg-TLukalWjefs/preview",
+      "category": "musique",
+      "description": ""
+    },
+    {
+      "title": "يا مدارس تونس",
+      "url": "https://drive.google.com/file/d/16x5sxeM2jOcDypqIT_wwSmYQ3RAs3BbK/preview",
+      "category": "musique",
+      "description": ""
+    },
+    {
+      "title": "لونغا رياض السنباطي",
+      "url": "https://drive.google.com/file/d/1oWfs9Y1zIpaypl0WQzUHy3T0Ki076zme/preview",
+      "category": "musique",
+      "description": ""
+    },
+    {
+      "title": "عايروني بيك",
+      "url": "https://drive.google.com/file/d/1DM9VJSg_mxByXxTFIhh0elC1yoxAtCSb/preview",
+      "category": "musique",
+      "description": ""
+    },
+    {
+      "title": "النصيحة هاك",
+      "url": "https://drive.google.com/file/d/1X4H6qisBzJXru7SjQPHrjmodg4zFlksi/preview",
+      "category": "musique",
+      "description": ""
+    },
+    {
+      "title": "النصيحة هاك — التعليق الصوتي",
+      "url": "https://drive.google.com/file/d/1fv8ubdv0ypMy5YNTAar7wKRT8V8ILjAP/preview",
+      "category": "musique",
+      "description": ""
+    },
+    {
+      "title": "فسحة إبداع",
+      "url": "https://drive.google.com/file/d/1p8RWYKZk2x5TROewPPyb-uVQE4pdSWwS/preview",
+      "category": "musique",
+      "description": ""
+    },
+    {
+      "title": "تسجيل ميداني — 12/04/2026",
+      "url": "https://drive.google.com/file/d/1dBUYPDISLvLEAGpMNoEMZVMxhXaShTBz/preview",
+      "category": "musique",
+      "description": ""
+    },
+    {
+      "title": "الدرس الشاهد — تنمو عناصري وترتفع",
+      "url": "https://drive.google.com/file/d/1rIBTSYjVuDf4_JWPY7C2U0NYT2mvDXuN/preview",
+      "category": "plastique",
+      "description": ""
+    },
+    {
+      "title": "أفاتار الوردة الناطقة",
+      "url": "https://drive.google.com/file/d/19oZ3_DR77SXi0UMiVERtz27OjDcneLkV/preview",
+      "category": "plastique",
+      "description": ""
+    },
+    {
+      "title": "المشروع 1 — الفيديو النهائي",
+      "url": "https://drive.google.com/file/d/18er2ZRc8fV84HVJHZyo_xzhnKYI3czvE/preview",
+      "category": "plastique",
+      "description": ""
+    },
+    {
+      "title": "نداء جاد (المقدّمة)",
+      "url": "https://drive.google.com/file/d/1qecycBeb8dN-3NTE_PT3MFd8Ih5k3J6D/preview",
+      "category": "aventure",
+      "description": ""
+    },
+    {
+      "title": "المغامرة — الجزء 2",
+      "url": "https://drive.google.com/file/d/1-6Ib-yHd5w6YYgsdKYHEwwmgnBxxP1pI/preview",
+      "category": "aventure",
+      "description": ""
+    },
+    {
+      "title": "المغامرة — الجزء 3",
+      "url": "https://drive.google.com/file/d/1q-W-a-L8L2JiO_UzquFQ350RQz94kDYX/preview",
+      "category": "aventure",
+      "description": ""
+    },
+    {
+      "title": "المغامرة — الجزء 4",
+      "url": "https://drive.google.com/file/d/1yV34_iZ6ieVsDJyiYX2uEz7qYr1JtU_v/preview",
+      "category": "aventure",
+      "description": ""
+    },
+    {
+      "title": "المغامرة — الجزء 5",
+      "url": "https://drive.google.com/file/d/1AclgUkCH-pBFd0qelhjYSSSz-uKD14Fe/preview",
+      "category": "aventure",
+      "description": ""
+    },
+    {
+      "title": "المغامرة — الجزء 8",
+      "url": "https://drive.google.com/file/d/1aK_y6DZMJ2EJ9Uh5y1Gx-g_PjnsCSLoZ/preview",
+      "category": "aventure",
+      "description": ""
+    },
+    {
+      "title": "المغامرة — الدرس (النسخة الكاملة)",
+      "url": "https://drive.google.com/file/d/1tvWnJC9bNcmMjBuZYsJGaQpGY2MuBez6/preview",
+      "category": "aventure",
+      "description": ""
+    },
+    {
+      "title": "فيديو إضافي (Média1)",
+      "url": "https://drive.google.com/file/d/1BRg5ZqRIfhN9MmdNt_koGcv3vgrJb8b7/preview",
+      "category": "aventure",
+      "description": ""
+    }
+  ],
+  "audios": [
+    {
+      "title": "إسمع قلبي — مع الغناء",
+      "url": "https://drive.google.com/file/d/12ODltf6KtuBXg5V_5GnzJO1TtEfJO6ch/preview#audio",
+      "category": "musique"
+    },
+    {
+      "title": "إسمع قلبي — موسيقى فقط",
+      "url": "https://drive.google.com/file/d/1QroEm7ElLd9p7b3cV5IcLgCEu5uQBBbC/preview#audio",
+      "category": "musique"
+    },
+    {
+      "title": "النصيحة هاك — مع الغناء",
+      "url": "https://drive.google.com/file/d/1TsxHs0uDv-ys2CE7W8fdlJxHe-6q5L9c/preview#audio",
+      "category": "musique"
+    },
+    {
+      "title": "النصيحة هاك — موسيقى فقط",
+      "url": "https://drive.google.com/file/d/1zv58UcdjxWWrm9QgDV0sRIbUsEdwtvpn/preview#audio",
+      "category": "musique"
+    },
+    {
+      "title": "يا مدارس تونس",
+      "url": "https://drive.google.com/file/d/13UQC4Ndy7wF-Pr9AHhjsdeCnx7L9smCC/preview#audio",
+      "category": "musique"
+    },
+    {
+      "title": "نباتي ينمو ويرتفع",
+      "url": "https://drive.google.com/file/d/1gNtS3j09d-l9Q00uqRTVrjRIbTGvjD0g/preview#audio",
+      "category": "plastique"
+    }
+  ],
+  "images": [
+    {
+      "image": "media/web/orchestre-cour.jpg",
+      "caption": "الفرقة المشتركة في ساحة العلم",
+      "category": "musique"
+    },
+    {
+      "image": "media/web/photo-levee-drapeau.jpg",
+      "caption": "تحيّة العلم مع الفرقة",
+      "category": "musique"
+    },
+    {
+      "image": "media/web/photo-ecole.jpg",
+      "caption": "ساحة المدرسة",
+      "category": "projet"
+    },
+    {
+      "image": "media/web/classe-oeuvres.jpg",
+      "caption": "التلاميذ وأعمالهم التشكيلية في القسم",
+      "category": "plastique"
+    },
+    {
+      "image": "media/web/banner-fresque.jpg",
+      "caption": "جدارية فسحة إبداع",
+      "category": "projet"
+    },
+    {
+      "image": "media/web/beethoven-classe.jpg",
+      "caption": "بيتهوفن في القسم",
+      "category": "musique"
+    },
+    {
+      "image": "media/web/fiche-plastique.jpg",
+      "caption": "بطاقة الدرس الشاهد — التربية التشكيلية",
+      "category": "plastique"
+    },
+    {
+      "image": "media/web/arbre-relations.jpg",
+      "caption": "التركيب والعلاقات داخل الفضاء",
+      "category": "plastique"
+    },
+    {
+      "image": "media/web/fleur-relief.jpg",
+      "caption": "الناتئ والغائر",
+      "category": "plastique"
+    },
+    {
+      "image": "media/web/kusama-poster.jpg",
+      "caption": "نقطة حياة — سيمفونية كوساما",
+      "category": "plastique"
+    },
+    {
+      "image": "media/web/kusama-evolution.jpg",
+      "caption": "من النقطة إلى الذكاء الاصطناعي",
+      "category": "plastique"
+    },
+    {
+      "image": "media/web/kusama-app.jpg",
+      "caption": "تطبيق Symphonie Kusama",
+      "category": "plastique"
+    },
+    {
+      "image": "media/web/recyclage-infini.jpg",
+      "caption": "Le recyclage infini",
+      "category": "plastique"
+    },
+    {
+      "image": "media/web/show-titre.jpg",
+      "caption": "فسحة إبداع — عرض موسيقي تربوي",
+      "category": "musique"
+    },
+    {
+      "image": "media/web/song-ismaa-kalbi.jpg",
+      "caption": "إسمع قلبي",
+      "category": "musique"
+    },
+    {
+      "image": "media/web/song-ya-mdares.jpg",
+      "caption": "يا مدارس تونس",
+      "category": "musique"
+    },
+    {
+      "image": "media/web/song-lounga.jpg",
+      "caption": "لونغا السنباطي",
+      "category": "musique"
+    },
+    {
+      "image": "media/web/song-ayrouni.jpg",
+      "caption": "عايروني بيك يا جاد",
+      "category": "musique"
+    },
+    {
+      "image": "media/web/song-nasiha.jpg",
+      "caption": "النصيحة هاك",
+      "category": "musique"
+    },
+    {
+      "image": "media/web/story-01.jpg",
+      "caption": "حكاية جاد",
+      "category": "aventure"
+    },
+    {
+      "image": "media/web/story-15.jpg",
+      "caption": "حكاية جاد",
+      "category": "aventure"
+    },
+    {
+      "image": "media/web/story-21.jpg",
+      "caption": "حكاية جاد",
+      "category": "aventure"
+    },
+    {
+      "image": "media/web/story-23.jpg",
+      "caption": "حكاية جاد",
+      "category": "aventure"
+    },
+    {
+      "image": "media/web/parcours-transformation.jpg",
+      "caption": "مسار التحوّل: من العنف إلى القيادة",
+      "category": "projet"
+    },
+    {
+      "image": "media/web/infographie-violence.jpg",
+      "caption": "خريطة تربوية حول العنف المدرسي",
+      "category": "projet"
+    }
+  ],
+  "documents": [
+    {
+      "title": "كلمات أغاني فسحة إبداع (PDF)",
+      "url": "media/docs/paroles-chansons-foshet-ibda3.pdf",
+      "description": "",
+      "category": "musique"
+    },
+    {
+      "title": "تنمو عناصري وترتفع — الدرس الفنّي (PDF)",
+      "url": "media/docs/lecon-tanmou-anasiri.pdf",
+      "description": "",
+      "category": "plastique"
+    },
+    {
+      "title": "مشروع فسحة إبداع — المسابقة الإقليمية (PPTX)",
+      "url": "https://drive.google.com/file/d/16zIk56whYs1hNf_qNimVIXkF8K8OBGw1/preview",
+      "description": "",
+      "category": "projet"
+    }
+  ]
+}

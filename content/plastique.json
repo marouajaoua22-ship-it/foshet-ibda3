@@ -1,0 +1,119 @@
+{
+  "title": "التربية التشكيلية",
+  "title_fr": "Arts plastiques",
+  "intro": "من السطح إلى الفضاء: دروس التربية التشكيلية التي حوّلت الهدوء الداخلي إلى أعمال مجسّمة، ثمّ إلى حديقة رقمية تتكلّم بالموسيقى.",
+  "intro_fr": "De la surface à l'espace : les leçons d'arts plastiques qui ont transformé le calme intérieur en œuvres en relief, puis en jardin numérique musical.",
+  "cover_image": "media/web/classe-oeuvres.jpg",
+  "lessons": [
+    {
+      "badge": "مشروع عدد 1 • درس شاهد في مادّة التربية التشكيلية",
+      "title": "« تَنْمُو عَنَاصِرِي وَتَرْتَفِعُ » — نَبَاتِي يَنْمُو، أَزْهَارِي تَتَفَتَّحُ",
+      "credits": "إعداد الأستاذة: هالة الجوة • تحت إشراف السيدة المتفقّدة: سنية ريدان • المدرسة الإعدادية النموذجية خزندار",
+      "description": "",
+      "fiche_image": "media/web/fiche-plastique.jpg",
+      "fiche_caption": "دَرْسٌ شَاهِدٌ فِي مَادَّةِ التَّرْبِيَةِ التَّشْكِيلِيَّةِ — 8 أساسي",
+      "supports_title": "السندات البيداغوجية والتشكيلية الكبرى",
+      "supports": [
+        {
+          "title": "المخطّط الشامل: التركيب والعلاقات داخل الفضاء",
+          "image": "media/web/arbre-relations.jpg",
+          "caption": "التركيب والعلاقات داخل الفضاء — إعداد الأستاذة هالة الجوة"
+        },
+        {
+          "title": "زهرة الناتئ والغائر (من 2D إلى 3D)",
+          "image": "media/web/fleur-relief.jpg",
+          "caption": "الناتئ والغائر — الوردة التشكيلية والأسئلة المركزية"
+        }
+      ],
+      "dimensions_title": "الأبعاد الثلاثة لبناء العمل التشكيلي داخل القسم",
+      "dimensions": [
+        {
+          "title": "الجانب الشكلي (ماذا نرى؟)",
+          "text": "الألوان المستخدمة (حارّة/باردة)، الأشكال العضوية والهندسية، والخامات المستعملة داخل اللوحة."
+        },
+        {
+          "title": "الجانب البنائي (كيف تمّ البناء؟)",
+          "text": "ترتيب العناصر في الفضاء، التراكب، التداخل، وتقنيات الكولاج وتفاعل الخامات."
+        },
+        {
+          "title": "الجانب الدلالي والتعبيري (لماذا؟)",
+          "text": "الرمزية (النموّ، الأمل، السلام)، الذاكرة والتراث، والرسالة البيداغوجية لمناهضة العنف."
+        }
+      ],
+      "steps_title": "",
+      "steps": [],
+      "videos_title": "مكتبة الوسائط الخاصّة بالمشروع 1",
+      "videos": [
+        {
+          "title": "الأغنية السند بالذكاء الاصطناعي",
+          "url": "https://drive.google.com/file/d/1gNtS3j09d-l9Q00uqRTVrjRIbTGvjD0g/preview#audio",
+          "description": ""
+        },
+        {
+          "title": "أفاتار الوردة الناطقة بالذكاء الاصطناعي",
+          "url": "https://drive.google.com/file/d/19oZ3_DR77SXi0UMiVERtz27OjDcneLkV/preview",
+          "description": ""
+        },
+        {
+          "title": "الرحلة الافتراضية ثلاثية الأبعاد (3D)",
+          "url": "",
+          "description": ""
+        },
+        {
+          "title": "التقرير الشامل ومجريات الحصّة",
+          "url": "https://drive.google.com/file/d/1rIBTSYjVuDf4_JWPY7C2U0NYT2mvDXuN/preview",
+          "description": ""
+        }
+      ],
+      "ml_demo": false,
+      "ml_app_url": "",
+      "ml_image": ""
+    },
+    {
+      "badge": "مشروع عدد 2 • فلسفة كوساما والذكاء الاصطناعي التوليدي",
+      "title": "« سيمفونية اللانهاية: من اللوحة إلى الحديقة الرقمية »",
+      "credits": "",
+      "description": "في هذا المشروع نطبّق فلسفة **يايوي كوساما** (تكرار النقاط ومحو الأنا والانصهار في الكلّ الكوني). يعتمد المشروع على ركيزتين: **كليب فيديو سيمفونية كوساما**، وتطبيق **Machine Learning** يحلّل لوحة التلميذ ليحوّلها إلى مفهوم بيئي ثمّ إلى مقطع موسيقي (Extrait musical) فريد.",
+      "fiche_image": "media/web/kusama-poster.jpg",
+      "fiche_caption": "نقطة حياة — سيمفونية الفنّ والذكاء الاصطناعي من أجل كوكب سليم",
+      "supports_title": "السندات البصرية للمشروع",
+      "supports": [
+        {
+          "title": "تسلسل تطوّري: من النقطة إلى الذكاء الاصطناعي",
+          "image": "media/web/kusama-evolution.jpg",
+          "caption": "تسلسل تطوّري: من النقطة إلى الذكاء الاصطناعي"
+        },
+        {
+          "title": "تحوّل البيانات البيئية الصمّاء إلى فنّ",
+          "image": "media/web/kusama-donnees.jpg",
+          "caption": "تحوّل البيانات البيئية الصمّاء إلى فنّ وموسيقى وذكاء اصطناعي"
+        },
+        {
+          "title": "مراحل السيمفونية",
+          "image": "media/web/kusama-saisons.jpg",
+          "caption": "مراحل سيمفونية كوساما"
+        },
+        {
+          "title": "Le recyclage infini",
+          "image": "media/web/recyclage-infini.jpg",
+          "caption": "Projet 2 — Dans un univers infini"
+        }
+      ],
+      "dimensions_title": "",
+      "dimensions": [],
+      "steps_title": "",
+      "steps": [],
+      "videos_title": "كليب سيمفونية كوساما",
+      "videos": [
+        {
+          "title": "كليب سيمفونية كوساما",
+          "url": "",
+          "description": "الفيديو التوعوي والفلسفي المستوحى من أعمال كوساما والبيئة."
+        }
+      ],
+      "ml_demo": true,
+      "ml_app_url": "",
+      "ml_image": "media/web/kusama-app.jpg"
+    }
+  ]
+}

@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>لوحة التحكم — فُسحة إبداع</title>
+  <link href="config.yml" type="text/yaml" rel="cms-config-url">
+  <style>
+    :root { --brand: #7a1f2b; --gold: #b8862b; --paper: #fbf7f0; --ink: #221c18; --muted: #74675c; --line: #e8dccb; --ko: #b42318; }
+    /* Les champs de Decap acceptent l'arabe : direction selon la saisie */
+    input[type="text"], textarea { unicode-bidi: plaintext; text-align: start; }
+
+    #gate {
+      position: fixed; inset: 0; z-index: 9999; display: grid; place-items: center; padding: 16px;
+      background: radial-gradient(120% 90% at 50% 0%, #8f2a37, var(--brand) 45%, #2b0d12);
+      font-family: "Cairo", "Segoe UI", Tahoma, sans-serif; color: var(--ink);
+    }
+    #gate form {
+      width: min(380px, 100%); background: var(--paper); border-radius: 20px; padding: 28px 24px 24px;
+      box-shadow: 0 30px 60px -20px rgba(0, 0, 0, .5); text-align: center;
+    }
+    #gate .mark {
+      width: 56px; height: 56px; margin: 0 auto 12px; border-radius: 16px; display: grid; place-items: center;
+      background: linear-gradient(135deg, var(--brand), var(--gold)); color: #fff; font-size: 26px;
+    }
+    #gate h1 { font-size: 1.25rem; margin: 0 0 4px; }
+    #gate p { margin: 0 0 18px; color: var(--muted); font-size: .92rem; }
+    #gate label { display: block; text-align: start; font-weight: 700; font-size: .9rem; margin-bottom: 6px; }
+    #gate input {
+      width: 100%; box-sizing: border-box; padding: 12px 14px; border-radius: 12px; border: 1.5px solid var(--line);
+      font: inherit; font-size: 1rem; direction: ltr; text-align: center; background: #fff;
+    }
+    #gate input:focus { outline: none; border-color: var(--brand); box-shadow: 0 0 0 3px rgba(122, 31, 43, .15); }
+    #gate button {
+      width: 100%; margin-top: 14px; padding: 12px; border: 0; border-radius: 999px; cursor: pointer;
+      background: var(--brand); color: #fff; font: inherit; font-weight: 800; font-size: 1rem;
+    }
+    #gate button:disabled { opacity: .5; cursor: wait; }
+    #gate .err { min-height: 1.5em; margin: 12px 0 0; color: var(--ko); font-weight: 700; font-size: .9rem; }
+    #gate .back { display: inline-block; margin-top: 14px; color: var(--muted); font-size: .85rem; }
+  </style>
+</head>
+<body>
+  <!-- Porte d'accès : Decap CMS n'est chargé qu'après le bon mot de passe -->
+  <div id="gate">
+    <form id="gateForm" autocomplete="off">
+      <div class="mark" aria-hidden="true">✦</div>
+      <h1>لوحة التحكم — فُسحة إبداع</h1>
+      <p>Espace réservé à l'équipe pédagogique</p>
+      <label for="pw">كلمة السرّ / Mot de passe</label>
+      <input id="pw" name="pw" type="password" required autofocus>
+      <button type="submit" id="go">دخول / Entrer</button>
+      <p class="err" id="err" role="alert" aria-live="assertive"></p>
+      <a class="back" href="../">← العودة إلى الموقع / Retour au site</a>
+    </form>
+  </div>
+
+  <script>
+  (function () {
+    "use strict";
+    // Empreinte SHA-256 de « foshet-ibda3:<mot de passe> » (le mot de passe n'apparaît pas en clair).
+    // Pour le changer : python changer_mot_de_passe_admin.py
+    var PASSWORD_HASH = "aba66c02039e5fe59edd5a9e7ab0cf248510f60e4114a20add8c22d42b50ed88";
+    var SALT = "foshet-ibda3:";
+    var KEY = "foshet-admin-ok";
+    var DECAP = "https://unpkg.com/decap-cms@^3.3.3/dist/decap-cms.js";
+
+    var gate = document.getElementById("gate");
+    var form = document.getElementById("gateForm");
+    var input = document.getElementById("pw");
+    var err = document.getElementById("err");
+    var btn = document.getElementById("go");
+    var fails = 0;
+
+    function hex(buf) {
+      return Array.prototype.map.call(new Uint8Array(buf), function (b) { return ("0" + b.toString(16)).slice(-2); }).join("");
+    }
+    function sha256(text) {
+      return crypto.subtle.digest("SHA-256", new TextEncoder().encode(text)).then(hex);
+    }
+    function openCms() {
+      gate.remove();
+      var s = document.createElement("script");
+      s.src = DECAP;
+      document.body.appendChild(s);
+    }
+
+    // Session déjà ouverte dans cet onglet ?
+    try { if (sessionStorage.getItem(KEY) === PASSWORD_HASH) { openCms(); return; } } catch (e) {}
+
+    if (!window.crypto || !crypto.subtle) {
+      err.textContent = "Ouvrez cette page en https:// (ou via lancer_cms.bat).";
+      btn.disabled = true;
+      return;
+    }
+
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+      btn.disabled = true;
+      err.textContent = "";
+      sha256(SALT + input.value).then(function (h) {
+        if (h === PASSWORD_HASH) {
+          try { sessionStorage.setItem(KEY, PASSWORD_HASH); } catch (x) {}
+          openCms();
+          return;
+        }
+        fails += 1;
+        input.value = "";
+        err.textContent = "كلمة السرّ غير صحيحة — Mot de passe incorrect";
+        // Délai croissant après plusieurs erreurs
+        setTimeout(function () { btn.disabled = false; input.focus(); }, fails >= 3 ? 3000 * (fails - 2) : 400);
+      });
+    });
+  })();
+  </script>
+</body>
+</html>

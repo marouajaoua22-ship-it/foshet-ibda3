@@ -1,0 +1,90 @@
+{
+  "site_title": "فُسحة إبداع",
+  "site_title_fr": "Foshet Ibda3",
+  "tagline": "الفنّ مسار إصلاح… لا مسار صراع",
+  "tagline_fr": "L'art, un chemin de réparation… pas de conflit",
+  "description": "مشروع تربوي مشترك بين التربية الموسيقية والتربية التشكيلية: من نبذ العنف إلى قيادة الأوركسترا، حين يُصغي التلميذ إلى صوته الداخلي ويجعل من الفنّ طريقه نحو القيادة.",
+  "description_fr": "Un projet éducatif conjoint en éducation musicale et en arts plastiques : du rejet de la violence à la direction d'orchestre, quand l'élève écoute sa voix intérieure et fait de l'art son chemin vers le leadership.",
+  "partnership": "شراكة بين المدرسة الإعدادية النموذجية خزندار وإعدادية كاراتشي",
+  "partnership_fr": "Partenariat entre le Collège pilote Khaznadar et le Collège Karatchi",
+  "hero_image": "media/web/banner-fresque.jpg",
+  "hero_video": "https://drive.google.com/file/d/1wOo5orw5q5kiXlKRBDkVt8Px1EX39is5/preview",
+  "hero_video_title": "الفيديو التقديمي للمشروع",
+  "hero_video_title_fr": "Vidéo de présentation du projet",
+  "team_title": "الفريق التربوي",
+  "team_title_fr": "L'équipe pédagogique",
+  "team": [
+    {
+      "name": "مروى الجوة",
+      "name_fr": "Maroua Jaoua",
+      "role": "تربية موسيقية",
+      "role_fr": "Éducation musicale",
+      "school": "المدرسة الإعدادية النموذجية خزندار",
+      "school_fr": "Collège pilote Khaznadar",
+      "subject": "musique",
+      "photo": ""
+    },
+    {
+      "name": "طاهر بن سويسي",
+      "name_fr": "Taher Ben Souissi",
+      "role": "تربية موسيقية",
+      "role_fr": "Éducation musicale",
+      "school": "إعدادية كاراتشي",
+      "school_fr": "Collège Karatchi",
+      "subject": "musique",
+      "photo": ""
+    },
+    {
+      "name": "هالة الجوة",
+      "name_fr": "Hela Jaoua",
+      "role": "تربية تشكيلية",
+      "role_fr": "Arts plastiques",
+      "school": "المدرسة الإعدادية النموذجية خزندار",
+      "school_fr": "Collège pilote Khaznadar",
+      "subject": "plastique",
+      "photo": ""
+    }
+  ],
+  "supervision_label": "بمتابعة بيداغوجية من السادة المتفقدين",
+  "supervision_label_fr": "Avec le suivi pédagogique des inspecteurs",
+  "inspectors": [
+    {
+      "name": "سفيان بوحامد",
+      "name_fr": "Sofiene Bouhamed",
+      "role": "متفقد التربية الموسيقية",
+      "role_fr": "Inspecteur d'éducation musicale"
+    },
+    {
+      "name": "سنية ريدان",
+      "name_fr": "Sonia Ridane",
+      "role": "متفقدة التربية التشكيلية",
+      "role_fr": "Inspectrice d'arts plastiques"
+    }
+  ],
+  "card_pedagogie": {
+    "label": "Ingénierie Pédagogique",
+    "title": "الإطار البيداغوجي والتحوّل السلوكي",
+    "title_fr": "Cadre pédagogique & transformation comportementale",
+    "description": "المنطلقات النظرية، مسار التحوّل من العنف إلى القيادة، مؤشرات الأثر، والبعد النفسي والتربوي للأغاني.",
+    "description_fr": "Fondements théoriques, parcours de la violence au leadership, indicateurs d'impact et dimension psycho-pédagogique des chansons.",
+    "image": "media/web/parcours-transformation.jpg"
+  },
+  "card_parcours": {
+    "label": "Parcours en Classe",
+    "title": "مسار القسم والمغامرة",
+    "title_fr": "Parcours en classe & aventure",
+    "description": "المغامرة التفاعلية مع جاد، ودروس التربية التشكيلية والتربية الموسيقية خطوةً بخطوة داخل القسم.",
+    "description_fr": "L'aventure interactive avec Jad, et les leçons d'arts plastiques et d'éducation musicale pas à pas en classe.",
+    "image": "media/web/classe-oeuvres.jpg"
+  },
+  "card_mediatheque": {
+    "label": "Médiathèque",
+    "title": "مكتبة الوسائط والتسجيلات",
+    "title_fr": "Médiathèque & enregistrements",
+    "description": "كلّ الفيديوهات والتسجيلات الصوتية والصور والوثائق في مكان واحد، مصنّفة حسب المادة.",
+    "description_fr": "Toutes les vidéos, enregistrements audio, images et documents au même endroit, classés par discipline.",
+    "image": "media/web/orchestre-cour.jpg"
+  },
+  "footer": "فُسحة إبداع — المدرسة الإعدادية النموذجية خزندار، باردو • إعدادية كاراتشي",
+  "footer_fr": "Foshet Ibda3 — Collège pilote Khaznadar, Le Bardo • Collège Karatchi"
+}
