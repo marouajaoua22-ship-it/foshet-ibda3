@@ -6,13 +6,10 @@
   "cover_image": "media/web/classe-oeuvres.jpg",
   "lessons": [
     {
+      "steps_title": "",
+      "ml_demo": false,
       "badge": "مشروع عدد 1 • درس شاهد في مادّة التربية التشكيلية",
-      "title": "« تَنْمُو عَنَاصِرِي وَتَرْتَفِعُ » — نَبَاتِي يَنْمُو، أَزْهَارِي تَتَفَتَّحُ",
-      "credits": "إعداد الأستاذة: هالة الجوة • تحت إشراف السيدة المتفقّدة: سنية ريدان • المدرسة الإعدادية النموذجية خزندار",
-      "description": "",
-      "fiche_image": "media/web/fiche-plastique.jpg",
       "fiche_caption": "دَرْسٌ شَاهِدٌ فِي مَادَّةِ التَّرْبِيَةِ التَّشْكِيلِيَّةِ — 8 أساسي",
-      "supports_title": "السندات البيداغوجية والتشكيلية الكبرى",
       "supports": [
         {
           "title": "المخطّط الشامل: التركيب والعلاقات داخل الفضاء",
@@ -26,6 +23,7 @@
         }
       ],
       "dimensions_title": "الأبعاد الثلاثة لبناء العمل التشكيلي داخل القسم",
+      "steps": [],
       "dimensions": [
         {
           "title": "الجانب الشكلي (ماذا نرى؟)",
@@ -40,13 +38,13 @@
           "text": "الرمزية (النموّ، الأمل، السلام)، الذاكرة والتراث، والرسالة البيداغوجية لمناهضة العنف."
         }
       ],
-      "steps_title": "",
-      "steps": [],
       "videos_title": "مكتبة الوسائط الخاصّة بالمشروع 1",
+      "ml_app_url": "",
+      "title": "« تَنْمُو عَنَاصِرِي وَتَرْتَفِعُ » — نَبَاتِي يَنْمُو، أَزْهَارِي تَتَفَتَّحُ",
       "videos": [
         {
-          "title": "الأغنية السند بالذكاء الاصطناعي",
-          "url": "https://drive.google.com/file/d/1gNtS3j09d-l9Q00uqRTVrjRIbTGvjD0g/preview#audio",
+          "title": "الأغنية السند ",
+          "url": "https://drive.google.com/file/d/1EcQObfnxNDBwkIjp5v3nu-PHCJQmqBwz/view?usp=drive_link",
           "description": ""
         },
         {
@@ -56,27 +54,26 @@
         },
         {
           "title": "الرحلة الافتراضية ثلاثية الأبعاد (3D)",
-          "url": "",
+          "url": "https://drive.google.com/file/d/1P9KEZWl_eenKV6Z5L2OA5rPcVeWzpikr/view?usp=drive_link",
           "description": ""
         },
         {
           "title": "التقرير الشامل ومجريات الحصّة",
-          "url": "https://drive.google.com/file/d/1rIBTSYjVuDf4_JWPY7C2U0NYT2mvDXuN/preview",
+          "url": "https://drive.google.com/file/d/1MLuPinlUHqmKu-l3V06KYnuoKJegmSl-/view?usp=drive_link",
           "description": ""
         }
       ],
-      "ml_demo": false,
-      "ml_app_url": "",
-      "ml_image": ""
+      "fiche_image": "media/web/fiche-plastique.jpg",
+      "credits": "إعداد الأستاذة: هالة الجوة • تحت إشراف السيدة المتفقّدة: سنية ريدان • المدرسة الإعدادية النموذجية خزندار",
+      "ml_image": "",
+      "description": "",
+      "supports_title": "السندات البيداغوجية والتشكيلية الكبرى"
     },
     {
+      "steps_title": "",
+      "ml_demo": true,
       "badge": "مشروع عدد 2 • فلسفة كوساما والذكاء الاصطناعي التوليدي",
-      "title": "« سيمفونية اللانهاية: من اللوحة إلى الحديقة الرقمية »",
-      "credits": "",
-      "description": "في هذا المشروع نطبّق فلسفة **يايوي كوساما** (تكرار النقاط ومحو الأنا والانصهار في الكلّ الكوني). يعتمد المشروع على ركيزتين: **كليب فيديو سيمفونية كوساما**، وتطبيق **Machine Learning** يحلّل لوحة التلميذ ليحوّلها إلى مفهوم بيئي ثمّ إلى مقطع موسيقي (Extrait musical) فريد.",
-      "fiche_image": "media/web/kusama-poster.jpg",
       "fiche_caption": "نقطة حياة — سيمفونية الفنّ والذكاء الاصطناعي من أجل كوكب سليم",
-      "supports_title": "السندات البصرية للمشروع",
       "supports": [
         {
           "title": "تسلسل تطوّري: من النقطة إلى الذكاء الاصطناعي",
@@ -100,20 +97,23 @@
         }
       ],
       "dimensions_title": "",
-      "dimensions": [],
-      "steps_title": "",
       "steps": [],
+      "dimensions": [],
       "videos_title": "كليب سيمفونية كوساما",
+      "ml_app_url": "",
+      "title": "« سيمفونية اللانهاية: من اللوحة إلى الحديقة الرقمية »",
       "videos": [
         {
           "title": "كليب سيمفونية كوساما",
-          "url": "",
+          "url": "https://drive.google.com/file/d/1To8M9KykMTodKvX1q3Y1CDAbJMMsAyWR/view?usp=sharing",
           "description": "الفيديو التوعوي والفلسفي المستوحى من أعمال كوساما والبيئة."
         }
       ],
-      "ml_demo": true,
-      "ml_app_url": "",
-      "ml_image": "media/web/kusama-app.jpg"
+      "fiche_image": "media/web/kusama-poster.jpg",
+      "credits": "الأستاذتين: هالة الجوة (أستاذة التربية التشكيلية) / مروى الجوة (أستاذة التربية الموسيقية) ",
+      "ml_image": "media/web/kusama-app.jpg",
+      "description": "في هذا المشروع نطبّق فلسفة **يايوي كوساما** (تكرار النقاط ومحو الأنا والانصهار في الكلّ الكوني). يعتمد المشروع على ركيزتين: **كليب فيديو سيمفونية كوساما**، وتطبيق **Machine Learning** يحلّل لوحة التلميذ ليحوّلها إلى مفهوم بيئي ثمّ إلى مقطع موسيقي (Extrait musical) فريد.",
+      "supports_title": "السندات البصرية للمشروع"
     }
   ]
 }
